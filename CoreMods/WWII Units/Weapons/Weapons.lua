@@ -1441,7 +1441,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         charTime        = 0,
         cx              = {0.5, 0.61, 0.80, 0.17, 2.0},
         k1              = 1.35e-08,
-        tracer_off      = 5.5,
+        tracer_off      = 5.0,
         smoke_tail_life_time = 0.1,
         cartridge       = 0,
         scale_smoke     = barrel_smoke_level,
@@ -1459,7 +1459,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         payloadEffect   = "Thermal",
         payloadMaterial = "Thermite",
         v0              = 912,
-        Dv0             = 0.000,
+        Dv0             = 0.0000,
         Da0             = 0.00081,
         Da1             = 0,
         life_time       = 7,
@@ -1497,7 +1497,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         charTime        = 0,
         cx              = {0.5, 0.61, 0.8, 0.17, 2},
         k1              = 1.35e-08,
-        tracer_off      = 5.5,
+        tracer_off      = 5,
         smoke_tail_life_time = 0.1,
         cartridge       = 0,
         scale_smoke     = barrel_smoke_level,
@@ -2396,7 +2396,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
                 chute_open_time             = 1.8,
                 chute_rnd_coeff             = 0.45,
                 set_changing_args           = {0,0,1,3,0},
-				explosion_style				= 0,                           
+				explosion_style				= 0,
             },
             warhead = simple_warhead(0.3,80),
         },
@@ -3882,7 +3882,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         wsTypeOfWeapon  = {wsType_Weapon, wsType_Bomb, wsType_Bomb_A, WSTYPE_PLACEHOLDER},
         scheme          = "bomb_common_v2",
         type            = 0,
-        mass            = 45.8,
+        mass            = 56.5,
         hMin            = 300.0,
         hMax            = 12000.0,
         Cx              = 0.00025,
@@ -3891,11 +3891,11 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         Reflection      = 0.01,
 		
         fm	= {
-            mass        = 45.8,
+            mass        = 56.5,
             caliber     = 0.207,
             cx_coeff    = {1.0, 0.39, 0.38, 0.236, 1.31},
-            L           = 0.976,
-            I           = 1/12 * 45.8 * 0.976 * 0.976,
+            L           = 1.02,
+            I           = 1 / 12 * 56.5 * 1.02 ^ 2,
             Ma          = 0.141338,
             Mw          = 2.244756,
             wind_sigma  = 30,
@@ -3903,7 +3903,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
 
         fuze = predefined_fuze("ANM10xA2"),
 
-        warhead         = simple_warhead(45, 207),
+        warhead         = predefined_warhead("AN_M30A1"),
 		
         shape_table_data = {
             {
@@ -3916,7 +3916,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
             },
         },
         targeting_data  = {
-            char_time   = 20.83, -- characteristic time for sights 
+            char_time   = 20.78, -- characteristic time for sights 
         },
     }
     declare_weapon(AN_M30A1)
@@ -3941,7 +3941,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         wsTypeOfWeapon  = {wsType_Weapon, wsType_Bomb, wsType_Bomb_A, WSTYPE_PLACEHOLDER},
         scheme          = "bomb_common_v2",
         type            = 0,
-        mass            = 113.0,
+        mass            = 123.5,
         hMin            = 300.0,
         hMax            = 12000.0,
         Cx              = 0.00035,
@@ -3950,11 +3950,11 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         Reflection      = 0.025,
 		
         fm	= {
-            mass        = 113.0,
+            mass        = 123.5,
             caliber     = 0.277,
             cx_coeff    = {1.0, 0.39, 0.38, 0.236, 1.31},
-            L           = 1.214,
-            I           = 1/12 * 113.0 * 1.214 * 1.214,
+            L           = 1.21,
+            I           = 1 / 12 * 123.5 * 1.21 ^ 2,
             Ma          = 0.141338,
             Mw          = 2.244756,
             wind_sigma  = 30,
@@ -3962,7 +3962,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
 
         fuze = predefined_fuze("ANM10xA2"),
 
-        warhead         = simple_warhead(90, 277),
+        warhead         = predefined_warhead("AN_M57"),
 		
         shape_table_data = {
             {
@@ -4007,7 +4007,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         wsTypeOfWeapon  = {wsType_Weapon, wsType_Bomb, wsType_Bomb_A, WSTYPE_PLACEHOLDER},
         scheme          = "bomb_common_v2",
         type            = 0,
-        mass            = 475.0,
+        mass            = 500.8,
         hMin            = 300.0,
         hMax            = 12000.0,
         Cx              = 0.00056,
@@ -4016,11 +4016,11 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         Reflection      = 0.035,
 		
         fm	= {
-            mass        = 475.0,
+            mass        = 500.8,
             caliber     = 0.477,
             cx_coeff    = {1.0, 0.39, 0.38, 0.236, 1.31},
-            L           = 1.765,
-            I           = 1/12 * 475.0 * 1.765 * 1.765,
+            L           = 1.77,
+            I           = 1 / 12 * 500.8 * 1.77 ^ 2,
             Ma          = 0.141338,
             Mw          = 2.244756,
             wind_sigma  = 30,
@@ -4028,7 +4028,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
 
         fuze = predefined_fuze("ANM10xA2"),
 
-        warhead         = simple_warhead(360, 477, 0.01),
+        warhead         = predefined_warhead("AN_M65"),
 
         shape_table_data = {
             {
@@ -4041,7 +4041,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
             },
         },
         targeting_data  = {
-            char_time   = 20.57, -- characteristic time for sights 
+            char_time   = 20.55, -- characteristic time for sights 
         },
     }
     declare_weapon(AN_M65)
@@ -4066,7 +4066,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         wsTypeOfWeapon  = {wsType_Weapon, wsType_Bomb, wsType_Bomb_A, WSTYPE_PLACEHOLDER},
         scheme          = "bomb_common_v2",
         type            = 0,
-        mass            = 977.0,
+        mass            = 996.3,
         hMin            = 300.0,
         hMax            = 12000.0,
         Cx              = 0.0008,
@@ -4074,11 +4074,11 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
         Ag              = -1.23,
 		
         fm	= {
-            mass        = 977.0,
+            mass        = 996.3,
             caliber     = 0.585,
             cx_coeff    = {1.0, 0.39, 0.38, 0.236, 1.31},
-            L           = 2.33,
-            I           = 1/12 * 977.0 * 2.33 * 2.33,
+            L           = 2.35,
+            I           = 1 / 12 * 996.3 * 2.35 ^ 2,
             Ma          = 0.141338,
             Mw          = 2.244756,
             wind_sigma  = 30,
@@ -4086,7 +4086,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
 
         fuze = predefined_fuze("ANM10xA2"),
 
-        warhead         = simple_warhead(750, 585, 0.01), --1,156 pounds of explosive +fragments
+        warhead         = predefined_warhead("AN_M66"),
 
         shape_table_data = {
             {
@@ -4099,7 +4099,7 @@ mount_vfs_texture_path(current_mod_path  .."/Weapons/Textures/UK_bomb_WWII")
             },
         },
         targeting_data  = {
-            char_time   = 20.48, -- characteristic time for sights 
+            char_time   = 20.47, -- characteristic time for sights 
         },
     }
     declare_weapon(AN_M66)
